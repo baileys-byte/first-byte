@@ -22,6 +22,13 @@
     else
             touch $test_file
     fi
+    echo "hostname = Linux Server 02" >> $test_file
+    echo "sensor_name = LinServ02" >> $test_file
+    echo "fake_addr = 192.168.55.254" >> $test_file
+    echo "ssh_version = OpenSSH_7.6p1, OpenSSL 1.0.2.n 7 Dec 2017" >> $test_file
+    echo "version = SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3" >> $test_file
+    echo "listen_endpoints = tcp:2222:interface=0.0.0.0" >> $test_file
+    echo "Internet_facing_ip = 9.9.9.9" >> $test_file
     ;;
     [bB])
     #echo $option
