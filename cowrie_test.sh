@@ -2,7 +2,8 @@
 #cowrie_test (){
 
    test_file="cowrie.cfg"
-   test_banner="motd.txt"
+   test_banner="motd"
+   newbanner="newbanner.txt"
    conf_file="././etc/cowrie.cfg"
    ban_file="././honeyfs/etc/motd" 
 
@@ -29,6 +30,8 @@
     echo "version = SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3" >> $test_file
     echo "listen_endpoints = tcp:2222:interface=0.0.0.0" >> $test_file
     echo "Internet_facing_ip = 9.9.9.9" >> $test_file
+    
+    cp $newbanner $test_banner
     ;;
     [bB])
     #echo $option
