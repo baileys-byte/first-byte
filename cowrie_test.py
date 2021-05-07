@@ -1,13 +1,21 @@
 #THIS PROGRAM MAKES CHANGES TO THE COWRIE CONFIG FILE
 
-#1. OPEN THE CONFIG FILE
-#2. APPEND LINE TO END OF FILE
-#3. CLOSE FILE
-
-
-#THIS PROGRAM WILL PROVIDE OPTIONS FOR THE USER TO CHOOSE
-
-#OPTION 1 - MIMICRY
-#THIS WILL APPEND MIMICRY SETTINGS TO THE CONFIG FILE
-
-#OPTION 2 - USERDB.EXAMPLE FILE WILL BE UPDATED TO HAVE NEW CREDENTIALS
+#Inputs: Configuration options (A, B, C, D)
+#Outputs: config.ctg and honeyfs/etc/motd
+#Call the command 
+# Choose an option
+#      IF option = A, B or C Then
+#          Check for config.ctg
+#           IF config.ctg exists Then 
+#               Clear contents of config.ctg 
+#           Else
+#                Create config.ctg
+#           ADD configuration settings
+#         LOCATE and EDIT banner file
+#     IF option = D Then
+#         Check for config.ctg
+#         IF config.ctg exists Then 
+#               Clear contents of config.ctg 
+#         Else
+#               Create config.ctg
+#  End
