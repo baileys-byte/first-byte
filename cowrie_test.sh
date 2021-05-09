@@ -17,7 +17,6 @@
     
     case $option in
     [aA])
-    #echo $option
     if [ -e $test_file ]; then
             cp /dev/null $test_file
     else
@@ -30,6 +29,8 @@
     echo "version = SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3" >> $test_file
     echo "listen_endpoints = tcp:2222:interface=0.0.0.0" >> $test_file
     echo "Internet_facing_ip = 9.9.9.9" >> $test_file
+    echo "[telnet]" >> $test_file
+    echo "enabled = true" >> $test_file
     
     cp $newbanner $test_banner
     ;;
@@ -42,6 +43,8 @@
     echo "Kernel_version = 5.4.0-42-generic" >> $test_file
     echo "kernel_build_string = #46~18.04.1.Ubuntu SMP" >> $test_file
     echo "arch = Linux-aarch64-lsb " >> $test_file
+    echo "[telnet]" >> $test_file
+    echo "enabled = true" >> $test_file
     
     cp $newbanner $test_banner
     ;;
@@ -60,12 +63,15 @@
     echo "Internet_facing_ip = 9.9.9.9" >> $test_file
     echo "Kernel_version = 5.4.0-42-generic" >> $test_file
     echo "kernel_build_string = #46~18.04.1.Ubuntu SMP" >> $test_file
-    echo "arch = Linux-aarch64-lsb " >> $test_file
+    echo "arch = Linux-aarch64-lsb" >> $test_file
+    echo "[telnet]" >> $test_file
+    echo "enabled = true" >> $test_file
 
     cp $newbanner $test_banner
     ;;
     [dD])
-    #echo $option
+    echo "[telnet]" >> $test_file
+    echo "enabled = true" >> $test_file
     ;;
     *)
     echo -n "Please enter a valid option"
