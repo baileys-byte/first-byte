@@ -105,6 +105,7 @@
     ;;
     *)
     echo -n "Please enter a valid option"
+    echo ""
     ;;
 esac
 	
