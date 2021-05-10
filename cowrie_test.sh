@@ -1,5 +1,5 @@
 #!/bin/bash
-#cowrie_test (){
+
 
    test_file="cowrie.cfg"
    test_banner="motd"
@@ -79,11 +79,6 @@
 esac
 
 
-   # if [ -e $file ]; then
-    #        echo "this is added content"
-    #else
-    #        echo "file does not exist"
-    #fi
-#}
+
 
 
